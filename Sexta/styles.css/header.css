@@ -2,9 +2,33 @@
     width: 24px;
     height: 24px;
     background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     display: inline-block;
 }
 
 .cabecalho{
     background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+.lista-menu {
+    display:none;
+    top: 100%;
+}
+   
+
